@@ -44,11 +44,14 @@ This study utilized a preprocessed version of the OASIS-1 dataset, containing T1
   - Resize to 224 × 224 pixels  
   - Normalize pixel values [0,1]  
   - Organize into class-specific folders  
-
 - **Data Splitting:** 70% Training | 15% Validation | 15% Testing (stratified)  
 - **Data Augmentation (Training only):**  
-  - Rotation ±30°, Horizontal/Vertical shift ±20%, Zoom ±20%, Horizontal Flip  
-- **Class Balancing:** `compute_class_weight` from Scikit-learn  
+  - Rotation ±30°  
+  - Horizontal/Vertical shift ±20%  
+  - Zoom ±20%  
+  - Horizontal flip  
+- **Class Balancing:** Computed using `compute_class_weight` from Scikit-learn
+
 
 ---
 
